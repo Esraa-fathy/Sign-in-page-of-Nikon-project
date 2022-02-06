@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sign in Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+          <!--
+       start navbar
+   -->
+   <nav>
+    <div class="container">
+       
+ <div class="loGo">
+ <h2 class="basiccolor">Nikon</h2>    
+ </div>  
+
+ <div class="links">
+<a href="../Home page in Nikon project/indx.html">Home</a>
+<a href="#">Sign in</a>
+<a href="../About us page -and- Body Page/idex.html">Body</a>
+<a href="../lenses page/index.html">Lenses</a>
+<a href="../lighting tool page/NIKON1.HTML">Lighting tools</a>
+<a href="../About us page -and- Body Page/about.html">About us</a>
+ </div>
+
+ </div>
+</nav> 
+
+ <!--
+    end navbar
+   -->
+
+<!--
+  start contact (sign up)
+-->
+<div class="signin">
+
+  <div class="secheading">
+    <h>Welcome back!</h>
+  </div>
+  
+  <p>Sign in to your account</p><br>
+  <span>Don't have an account?</span>&nbsp; 
+  <a href="../Sign Up page in Nikon project/index.html">Sign Up</a>
+  <form name="myform" onsubmit="return test()" action="../Home page in Nikon project/indx.html">
+ <br><br>
+  <input type="email" name="Em" placeholder="Enter E-mail">
+  <input type="text" name="pss" placeholder="Enter Password" >
+  <input class ="input1" type="submit" value="SIGN IN">
+  </form>
+  <script>
+    function test(){
+    var Email_arr=["esraa@gmail.com","Ekram@gmail.com","Ahmed_mostafa@gmail.com","Ahmed_mohamed@gmail.com"];
+    var pass_arr=["123","456","789","222"];
+    var email=document.forms["myform"]["Em"].value;
+    var pass=document.forms["myform"]["pss"].value;
+    
+    for(var i=0;i<4;i++){
+    if((email==Email_arr[i]) && (pass==pass_arr[i]))
+    return true;
+    else if(email=="" || pass==""){
+    alert("name and password empty");
+    return false;
+    }
+    }
+    return false;
+    }
+    
+    </script>
+</div>
+
+    <!--
+      end contact (sign up)
+    -->
+    
+    </body>
+    </html>   
